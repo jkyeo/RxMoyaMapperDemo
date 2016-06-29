@@ -18,14 +18,32 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rMM-NN-A08">
-                                <rect key="frame" x="249" y="550" width="102" height="30"/>
-                                <state key="normal" title="Get PM2.5 Info"/>
+                                <rect key="frame" x="270" y="550" width="60" height="30"/>
+                                <state key="normal" title="获取汇率"/>
                             </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="36K-rk-G3T">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="530"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="9dA-gb-Sub">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9dA-gb-Sub" id="fiU-XH-9cr">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="rMM-NN-A08" firstAttribute="top" secondItem="36K-rk-G3T" secondAttribute="bottom" constant="20" id="1JU-ba-bSV"/>
+                            <constraint firstItem="36K-rk-G3T" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="7nI-up-3C5"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="rMM-NN-A08" secondAttribute="bottom" constant="20" id="96L-Cz-T7V"/>
+                            <constraint firstItem="36K-rk-G3T" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="FQY-u3-jIc"/>
                             <constraint firstItem="rMM-NN-A08" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PPO-iF-Uzy"/>
+                            <constraint firstAttribute="trailing" secondItem="36K-rk-G3T" secondAttribute="trailing" id="Vml-UA-60p"/>
                         </constraints>
                     </view>
                 </viewController>
