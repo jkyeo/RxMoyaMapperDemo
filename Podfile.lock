@@ -1,0 +1,30 @@
+PODS:
+  - Alamofire (3.4.1)
+  - Moya (6.5.0):
+    - Moya/Core (= 6.5.0)
+  - Moya/Core (6.5.0):
+    - Alamofire (~> 3.0)
+    - Result (~> 2.0)
+  - Moya/RxSwift (6.5.0):
+    - Moya/Core
+    - RxSwift (~> 2.0)
+  - Result (2.1.1)
+  - RxSwift (2.5.0)
+  - SwiftyJSON (2.3.2)
+
+DEPENDENCIES:
+  - Alamofire
+  - Moya
+  - Moya/RxSwift
+  - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: 01a82e2f6c0f860ade35534c8dd88be61bdef40c
+  Moya: f7a4044719381cc6299f9ad3e0ef05f426f0557b
+  Result: 822c879f145943320cc80a9a8372378e3d699fe4
+  RxSwift: 402b41a50e922a0368fc14cb3bc9f4427920e8ae
+  SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
+
+PODFILE CHECKSUM: beff0131e4b5a163a7fea1d9d4e076a795adb948
+
+COCOAPODS: 1.0.1

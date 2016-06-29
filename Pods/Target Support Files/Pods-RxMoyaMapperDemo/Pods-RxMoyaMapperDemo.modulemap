@@ -1,0 +1,6 @@
+framework module Pods_RxMoyaMapperDemo {
+  umbrella header "Pods-RxMoyaMapperDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}
