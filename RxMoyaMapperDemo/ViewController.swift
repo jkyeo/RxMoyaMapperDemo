@@ -20,7 +20,8 @@ class ViewController: UIViewController {
             .mapResponseToObjArray(BoxofficeModel)
             .subscribe(
                 onNext: { items in
-                    print(items)
+                    self.dataSets = items
+                    self.tableView.reloadData()
                 },
                 onError: { error in
                     print(error)
@@ -54,8 +55,15 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = return tableView.dequeueReusableCellWithIdentifier("rankCell") as? RankTableViewCell
-        if let cell 
+        var cell = tableView.dequeueReusableCellWithIdentifier("rankCell") as? RankTableViewCell
+        if nil == cell {
+            cell = RankTableViewCell(style: .Default, reuseIdentifier: "rankCell")
+        }
+        
+        cell?.nameLabel.text = dataSets[indexPath.row].name
+        cell?.rankLabel.text = "\(dataSets[indexPath.row].tboxoffice!) 万元"
+        
+        return cell!
     }
     
 }

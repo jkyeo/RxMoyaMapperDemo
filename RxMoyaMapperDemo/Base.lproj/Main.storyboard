@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="36K-rk-G3T">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="530"/>
+                                <rect key="frame" x="0.0" y="20" width="600" height="510"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="rankCell" id="9dA-gb-Sub" customClass="RankTableViewCell" customModule="RxMoyaMapperDemo" customModuleProvider="target">
@@ -30,20 +30,20 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="电影名称" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N0m-YS-Uwr">
-                                                    <rect key="frame" x="8" y="10" width="80" height="24"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <rect key="frame" x="8" y="12" width="64" height="20"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="累计票房" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DpI-Fx-n2s">
-                                                    <rect key="frame" x="524" y="11" width="68" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <rect key="frame" x="532" y="13" width="60" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="DpI-Fx-n2s" firstAttribute="centerY" secondItem="fiU-XH-9cr" secondAttribute="centerY" id="Evh-9h-xno"/>
+                                                <constraint firstItem="DpI-Fx-n2s" firstAttribute="baseline" secondItem="N0m-YS-Uwr" secondAttribute="baseline" id="4wc-Ep-YUW"/>
                                                 <constraint firstItem="DpI-Fx-n2s" firstAttribute="trailing" secondItem="fiU-XH-9cr" secondAttribute="trailingMargin" id="apA-Lk-XY3"/>
                                                 <constraint firstItem="N0m-YS-Uwr" firstAttribute="centerY" secondItem="fiU-XH-9cr" secondAttribute="centerY" id="cB4-t6-bGp"/>
                                                 <constraint firstItem="N0m-YS-Uwr" firstAttribute="leading" secondItem="fiU-XH-9cr" secondAttribute="leadingMargin" id="nVi-im-xzN"/>
@@ -69,7 +69,7 @@
                             <constraint firstItem="rMM-NN-A08" firstAttribute="top" secondItem="36K-rk-G3T" secondAttribute="bottom" constant="20" id="1JU-ba-bSV"/>
                             <constraint firstItem="36K-rk-G3T" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="7nI-up-3C5"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="rMM-NN-A08" secondAttribute="bottom" constant="20" id="96L-Cz-T7V"/>
-                            <constraint firstItem="36K-rk-G3T" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="FQY-u3-jIc"/>
+                            <constraint firstItem="36K-rk-G3T" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" id="FQY-u3-jIc"/>
                             <constraint firstItem="rMM-NN-A08" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PPO-iF-Uzy"/>
                             <constraint firstAttribute="trailing" secondItem="36K-rk-G3T" secondAttribute="trailing" id="Vml-UA-60p"/>
                         </constraints>
