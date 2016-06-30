@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		284A1D544375F6B337765666 /* Pods_RxMoyaMapperDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20E0A86EC0FC2E44631390C5 /* Pods_RxMoyaMapperDemoTests.framework */; };
+		3F6C667F1D24C22200781268 /* BoxofficeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6C667E1D24C22200781268 /* BoxofficeModel.swift */; };
+		3F6C66811D24C2F700781268 /* RxMoyaResponseMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6C66801D24C2F700781268 /* RxMoyaResponseMapper.swift */; };
+		3F6C66831D24C33D00781268 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6C66821D24C33D00781268 /* ApiService.swift */; };
+		3F6C66851D24CE3200781268 /* RankTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6C66841D24CE3200781268 /* RankTableViewCell.swift */; };
 		463C645074DC7A2A3C33A55C /* Pods_RxMoyaMapperDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E169DC6490F5702DB6478BF2 /* Pods_RxMoyaMapperDemoUITests.framework */; };
 		AB4369EBAB1AD18E45944DBD /* Pods_RxMoyaMapperDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 136994A872EC08FF1885CA2E /* Pods_RxMoyaMapperDemo.framework */; };
 		CA0FD73F1D240D010038DC7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0FD73E1D240D010038DC7E /* AppDelegate.swift */; };
@@ -41,6 +45,10 @@
 		20E0A86EC0FC2E44631390C5 /* Pods_RxMoyaMapperDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxMoyaMapperDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2794855A394861E23C876C67 /* Pods-RxMoyaMapperDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxMoyaMapperDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxMoyaMapperDemoTests/Pods-RxMoyaMapperDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		3D7FB0FA4E509536192F14C2 /* Pods-RxMoyaMapperDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxMoyaMapperDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxMoyaMapperDemoUITests/Pods-RxMoyaMapperDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3F6C667E1D24C22200781268 /* BoxofficeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoxofficeModel.swift; sourceTree = "<group>"; };
+		3F6C66801D24C2F700781268 /* RxMoyaResponseMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxMoyaResponseMapper.swift; sourceTree = "<group>"; };
+		3F6C66821D24C33D00781268 /* ApiService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		3F6C66841D24CE3200781268 /* RankTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankTableViewCell.swift; sourceTree = "<group>"; };
 		60233CBF0C61822947592C62 /* Pods-RxMoyaMapperDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxMoyaMapperDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxMoyaMapperDemoTests/Pods-RxMoyaMapperDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B50CEC08203C4906E088FB21 /* Pods-RxMoyaMapperDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxMoyaMapperDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxMoyaMapperDemoUITests/Pods-RxMoyaMapperDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		CA0FD73B1D240D010038DC7E /* RxMoyaMapperDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxMoyaMapperDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,12 +132,16 @@
 		CA0FD73D1D240D010038DC7E /* RxMoyaMapperDemo */ = {
 			isa = PBXGroup;
 			children = (
+				3F6C66821D24C33D00781268 /* ApiService.swift */,
+				3F6C66801D24C2F700781268 /* RxMoyaResponseMapper.swift */,
 				CA0FD73E1D240D010038DC7E /* AppDelegate.swift */,
 				CA0FD7401D240D010038DC7E /* ViewController.swift */,
 				CA0FD7421D240D010038DC7E /* Main.storyboard */,
 				CA0FD7451D240D010038DC7E /* Assets.xcassets */,
 				CA0FD7471D240D010038DC7E /* LaunchScreen.storyboard */,
 				CA0FD74A1D240D010038DC7E /* Info.plist */,
+				3F6C667E1D24C22200781268 /* BoxofficeModel.swift */,
+				3F6C66841D24CE3200781268 /* RankTableViewCell.swift */,
 			);
 			path = RxMoyaMapperDemo;
 			sourceTree = "<group>";
@@ -431,6 +443,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA0FD7411D240D010038DC7E /* ViewController.swift in Sources */,
+				3F6C66851D24CE3200781268 /* RankTableViewCell.swift in Sources */,
+				3F6C66831D24C33D00781268 /* ApiService.swift in Sources */,
+				3F6C66811D24C2F700781268 /* RxMoyaResponseMapper.swift in Sources */,
+				3F6C667F1D24C22200781268 /* BoxofficeModel.swift in Sources */,
 				CA0FD73F1D240D010038DC7E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
