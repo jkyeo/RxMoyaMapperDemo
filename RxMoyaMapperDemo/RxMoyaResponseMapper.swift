@@ -15,7 +15,7 @@ enum ORMError : ErrorType {
     case ORMNotSuccessfulHTTP
     case ORMNoData
     case ORMCouldNotMakeObjectError
-    case ORMBizError(resultCode: Int?, resultMsg: String?)
+    case ORMBizError(resultCode: String?, resultMsg: String?)
 }
 
 enum BizStatus: String {
@@ -60,7 +60,7 @@ extension Observable {
                     return self.resultFromJSON(json[RESULT_DATA], classType:type)
                 } else {
                     // bizError -> throw biz error
-                    throw ORMError.ORMBizError(resultCode: json[RESULT_CODE].int, resultMsg: json[RESULT_MSG].string)
+                    throw ORMError.ORMBizError(resultCode: json[RESULT_CODE].string, resultMsg: json[RESULT_MSG].string)
                 }
             } else {
                 throw ORMError.ORMCouldNotMakeObjectError
@@ -102,7 +102,7 @@ extension Observable {
                     }
                     
                 } else {
-                    throw ORMError.ORMBizError(resultCode: json[RESULT_CODE].int, resultMsg: json[RESULT_MSG].string)
+                    throw ORMError.ORMBizError(resultCode: json[RESULT_CODE].string, resultMsg: json[RESULT_MSG].string)
                 }
             } else {
                 throw ORMError.ORMCouldNotMakeObjectError
